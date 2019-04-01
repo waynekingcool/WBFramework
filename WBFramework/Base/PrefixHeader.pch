@@ -1,0 +1,59 @@
+//
+//  PrefixHeader.pch
+//  WBFramework
+//
+//  Created by wayneking on 2018/7/11.
+//  Copyright © 2018年 wayneking. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//头文件
+#import <AFNetworking.h>
+#import <Masonry.h>
+#import <ReactiveCocoa.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import <MBProgressHUD.h>
+#import "WBRoute.h"
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <ReactiveCocoa.h>
+#import "WBUtil.h"
+
+//路由方式
+#define PushRoute @"/myAppPush/:viewController"
+#define PresentRoute @"/myAppPresent/:viewController"
+
+// 屏幕尺寸
+#define screenWidth     [UIScreen mainScreen].bounds.size.width
+#define screenHeight    [UIScreen mainScreen].bounds.size.height
+
+//导航栏颜色
+#define MainNavBarColor [UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1]
+#define MainViewColor [UIColor colorWithRed:126/255.0 green:126/255.0 blue:126/255.0 alpha:1]
+
+//适配IPHONEX
+#define  iSIPhoneX (screenWidth == 375.f && screenHeight == 812.f ? YES : NO)
+#define  StatusBarHeight      (iSIPhoneX ? 44.f : 20.f)
+#define  NavgationBarHeight  (iSIPhoneX ? 88.f : 64.f)
+#define TabBarHeight (iSIPhoneX ? (49.f+34.f) : 49.f)
+//IPHONEX刘海
+#define LiuHai 30.f
+
+//自定义Log
+#ifdef DEBUG
+#define WBLog(...) NSLog(__VA_ARGS__)
+#else
+#define WBLog(...)
+#endif
+
+// 常用字体
+#define FONT(fontsize)                [UIFont systemFontOfSize:fontsize]
+#define FONT_BOLD(fontsize)           [UIFont boldSystemFontOfSize:fontsize]
+
+//接口地址
+#define BaseUrl @"http://toutiaoapi.mamayy.com"     //正式环境
+
+#endif /* PrefixHeader_pch */
