@@ -4,7 +4,7 @@
 //
 //  Created by wayneking on 2018/7/11.
 //  Copyright © 2018年 wayneking. All rights reserved.
-//  别人觉得好的不一定是适合自己的,只有适合自己才是最好的(#^.^#)1
+//  别人觉得好的不一定是适合自己的,只有适合自己才是最好的(#^.^#)
 
 #import "AppDelegate.h"
 #import <JLRoutes.h>
