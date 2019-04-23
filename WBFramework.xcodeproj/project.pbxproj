@@ -37,6 +37,8 @@
 		18B33903215A0BD100BF899D /* CommonPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B33902215A0BD100BF899D /* CommonPlayer.m */; };
 		18B33906215A0DFD00BF899D /* TestStrategyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B33905215A0DFD00BF899D /* TestStrategyController.m */; };
 		1B93D9346CA4A19416BC4844 /* libPods-WBFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA9458338D62C23669D4DCE /* libPods-WBFramework.a */; };
+		C822A473226D45F60034C28C /* TestDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C822A472226D45F60034C28C /* TestDownloadController.m */; };
+		C822A476226D540C0034C28C /* TestOfflineDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C822A475226D540C0034C28C /* TestOfflineDownloadController.m */; };
 		C84F714420FC32250024F326 /* WBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F714320FC32250024F326 /* WBRequest.m */; };
 		C84F714720FC37680024F326 /* WBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F714620FC37680024F326 /* WBRequestManager.m */; };
 		C84F714B20FC716E0024F326 /* WBRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F714A20FC716E0024F326 /* WBRoute.m */; };
@@ -114,6 +116,10 @@
 		18B33905215A0DFD00BF899D /* TestStrategyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStrategyController.m; sourceTree = "<group>"; };
 		295C1B18FCF8745125543E54 /* Pods-WBFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBFramework/Pods-WBFramework.release.xcconfig"; sourceTree = "<group>"; };
 		2B76E6F287D0C1E7D5022B39 /* Pods-WBFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBFramework/Pods-WBFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		C822A471226D45F60034C28C /* TestDownloadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDownloadController.h; sourceTree = "<group>"; };
+		C822A472226D45F60034C28C /* TestDownloadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDownloadController.m; sourceTree = "<group>"; };
+		C822A474226D540C0034C28C /* TestOfflineDownloadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOfflineDownloadController.h; sourceTree = "<group>"; };
+		C822A475226D540C0034C28C /* TestOfflineDownloadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOfflineDownloadController.m; sourceTree = "<group>"; };
 		C84F714220FC32250024F326 /* WBRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBRequest.h; sourceTree = "<group>"; };
 		C84F714320FC32250024F326 /* WBRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBRequest.m; sourceTree = "<group>"; };
 		C84F714520FC37680024F326 /* WBRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBRequestManager.h; sourceTree = "<group>"; };
@@ -354,6 +360,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C822A470226D45CC0034C28C /* TestDownload(测试下载) */ = {
+			isa = PBXGroup;
+			children = (
+				C822A471226D45F60034C28C /* TestDownloadController.h */,
+				C822A472226D45F60034C28C /* TestDownloadController.m */,
+				C822A474226D540C0034C28C /* TestOfflineDownloadController.h */,
+				C822A475226D540C0034C28C /* TestOfflineDownloadController.m */,
+			);
+			path = "TestDownload(测试下载)";
+			sourceTree = "<group>";
+		};
 		C826F09E2134ED3600A7F832 /* TestASDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +469,7 @@
 			children = (
 				C84F714F20FC74E20024F326 /* BViewController.h */,
 				C84F715020FC74E20024F326 /* BViewController.m */,
+				C822A470226D45CC0034C28C /* TestDownload(测试下载) */,
 				18299BC6217EF330007CFFDA /* TestGCD */,
 				18B338D82159D73100BF899D /* TestPattern(测试设计模式) */,
 				C826F09E2134ED3600A7F832 /* TestASDK */,
@@ -589,6 +607,7 @@
 				1875505E215F168500A1D176 /* NSMutableDictionary+ToJson.m in Sources */,
 				1881CC41214B9F4000AB2E22 /* BaseNavController.m in Sources */,
 				189F3EE92150F3C000334505 /* BaseLogic.m in Sources */,
+				C822A473226D45F60034C28C /* TestDownloadController.m in Sources */,
 				C889250C20F5939700379B0C /* ViewController.m in Sources */,
 				18B338DC2159D79700BF899D /* CarLicense.m in Sources */,
 				18755060215F168500A1D176 /* WBSearchBar.m in Sources */,
@@ -603,6 +622,7 @@
 				1881CC48214B9FB800AB2E22 /* CCProgressHUD.m in Sources */,
 				18B338E22159D9CE00BF899D /* YellowLicense.m in Sources */,
 				18B33906215A0DFD00BF899D /* TestStrategyController.m in Sources */,
+				C822A476226D540C0034C28C /* TestOfflineDownloadController.m in Sources */,
 				1875506D215F2A2100A1D176 /* MyBankCellNode.m in Sources */,
 				18755067215F188B00A1D176 /* YYFPSLabel.m in Sources */,
 				18B338F9215A075100BF899D /* WBAVPlayerII.m in Sources */,

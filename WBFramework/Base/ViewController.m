@@ -11,8 +11,9 @@
 #import "BViewController.h"
 #import "TestASDKController.h"
 #import "TestGCDController.h"
+#import "TestDownloadController.h"
 
-@interface ViewController ()
+@interface ViewController ()<NSURLSessionDownloadDelegate>
 
 @end
 
@@ -24,6 +25,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.title = @"Home";
+    WBLog(@"%@",NSHomeDirectory());
     
     UIButton *button = [[UIButton alloc]init];
     [button setTitle:@"点我" forState:UIControlStateNormal];
@@ -54,7 +56,11 @@
 //        [self.navigationController pushViewController:vc animated:YES];
         
         
-        TestGCDController *vc = [[TestGCDController alloc]init];
+//        TestGCDController *vc = [[TestGCDController alloc]init];
+//        [self.navigationController pushViewController:vc animated:YES];
+        
+        //测试下载
+        TestDownloadController *vc = [[TestDownloadController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }];
 }
